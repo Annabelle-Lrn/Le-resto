@@ -1,0 +1,26 @@
+main{
+    .top-section{
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+    }
+    .top-section-left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px; 
+        padding: 50px;
+        border: 2px dashed $color1;
+
+        img{
+        width: 3%;
+    }
+    }
+   
+
+    
+    .top-section-right{
+        background: url(../img/store-01.jpg) ;
+        width: 100%;
+    }
+}
