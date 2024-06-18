@@ -1,0 +1,70 @@
+.event{
+    background: $black;
+
+    .event-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+
+        h3{
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+        #couverts{
+            width: 2%;
+        }
+    }
+    .event-section{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        gap: 10px;
+        grid-template-areas:
+        "eve1 eve3" 
+        "eve2 eve3";
+        width: 80%;
+        margin: 0 10%;
+
+        .first-event, .second-event{
+            display: flex;
+            grid-area: eve1;
+            img{
+                width: 50%;
+                position: relative;
+                z-index: 1;
+            }
+            p{
+                z-index: 4;
+                background: $black;
+                position: absolute;
+                color: $white;
+            }
+
+        }
+        .second-event{
+            display: flex;
+            grid-area: eve2;
+            img{
+                width: 50%;
+                position: relative;
+            }
+            p{
+                z-index: 4;
+                background: $black;
+                position: absolute;
+                color: $white;
+            }
+        }
+        .third-event{
+            display: flex;
+            grid-area: eve3;
+            background: url(../img/event-03.jpg) center/cover;
+            width: 100%;
+        }
+    }
+}

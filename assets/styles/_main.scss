@@ -2,27 +2,47 @@ main{
     .top-section{
         display: grid;
         grid-template-columns: 50% 50%;
-
+        grid-template-rows: 100%;
+        background: rgba(243, 241, 241, 0.856);
     }
     .top-section-left{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 10px; 
-        padding: 50px;
-        border: 2px dashed $color1;
-
+        margin: 20px; 
+        border: 0.9px dashed $color1;
+        
+        .title{
+            display: flex;
+            flex-direction: column;
+            padding: 60px 0 40px;
+        }
         h2{
             color:$black;
-            font-weight: 600;
+            font-weight:bold;
+            padding-bottom: 20px;
+        }      
+        #couverts{
+            align-self: center;
+            width: 25%;
+        }
+        p{
+            text-align: center;
+            font-size: 1.2rem;
+            line-height: 25px;
+            padding-bottom: 50px;
+        }
+        .chef{
+            margin-bottom: 15px;
+        }
+        span{
+           margin-bottom: 100px;
+        }
         }
     }
-    }
    
-
     
     .top-section-right{
         background: url(../img/store-01.jpg) ;
         width: 100%;
     }
-}

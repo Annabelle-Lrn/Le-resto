@@ -16,7 +16,7 @@ $font2: Poppins, sans-serif;
 $font3: Roboto, sans-serif;
 $color1: rgb(182, 125, 4);
 $white: rgb(248, 242, 242);
-$black: rgb(8, 8, 8);
+$black: rgb(32, 32, 32);
 $grey:rgb(153, 150, 150);
 
 *{
@@ -34,8 +34,13 @@ h3{
 }
 h2{
     color:$white;
-    font-family: $font3;
+    font-family: $font2;
     text-transform: uppercase;
+}
+h4{
+    font-family: $font2;
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 li{
     display: inline;
@@ -45,4 +50,17 @@ li{
 #couverts{
     width: 3%;
 
+}
+p{
+    font-family: $font3;
+    color: $black;
+}
+.chef{
+    border-radius: 150px;
+    width: 10%;
+}
+span{
+    text-transform: uppercase;
+    font-family: $font2;
+    color: $grey;
 }
