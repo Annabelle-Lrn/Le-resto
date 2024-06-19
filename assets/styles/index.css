@@ -390,6 +390,15 @@ main .top-section-left span {
 
 .event {
   background: rgb(32, 32, 32);
+  padding-bottom: 20px;
+}
+.event .btn {
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  padding: 40px;
 }
 .event .event-title {
   display: flex;
@@ -410,45 +419,145 @@ main .top-section-left span {
   width: 2%;
 }
 .event .event-section {
+  padding: 10px;
   display: grid;
   grid-template-columns: 60% 40%;
-  gap: 10px;
+  gap: 20px;
   grid-template-areas: "eve1 eve3" "eve2 eve3";
   width: 80%;
   margin: 0 10%;
 }
-.event .event-section .first-event, .event .event-section .second-event {
-  display: flex;
+.event .event-section .first-event {
+  display: grid;
   grid-area: eve1;
+  grid-template-columns: 40% 60%;
+  height: 100%;
 }
-.event .event-section .first-event img, .event .event-section .second-event img {
-  width: 50%;
-  position: relative;
-  z-index: 1;
+.event .event-section .first-event .left {
+  display: flex;
+  width: 100%;
+  background: url(../img/event-01.jpg) center/cover;
+  justify-content: center;
+  align-items: center;
 }
-.event .event-section .first-event p, .event .event-section .second-event p {
-  z-index: 4;
+.event .event-section .first-event .date {
+  display: inline-block;
+  text-align: center;
   background: rgb(32, 32, 32);
-  position: absolute;
+  padding: 20px 30px;
+}
+.event .event-section .first-event .date span {
+  color: rgb(248, 242, 242);
+  font-size: 1.5rem;
+}
+.event .event-section .first-event .date p {
   color: rgb(248, 242, 242);
 }
-.event .event-section .second-event {
+.event .event-section .right {
   display: flex;
+  flex-direction: column;
+  background: rgb(248, 242, 242);
+  width: 100%;
+  padding: 40px 5px 50px;
+}
+.event .event-section .right h4 {
+  padding: 0 0 40px 20px;
+  text-transform: capitalize;
+  font-family: Roboto, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+.event .event-section .right ul {
+  display: flex;
+  color: rgba(182, 179, 179, 0.863);
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+.event .event-section .right ul i {
+  padding: 0 10px 0 20px;
+}
+.event .event-section .right .btn {
+  text-align: left;
+}
+
+.second-event {
+  display: grid;
   grid-area: eve2;
+  grid-template-columns: 40% 60%;
+  height: 100%;
 }
-.event .event-section .second-event img {
-  width: 50%;
-  position: relative;
+.second-event .left {
+  display: flex;
+  width: 100%;
+  background: url(../img/event-02.jpg) center/cover;
+  justify-content: center;
+  align-items: center;
 }
-.event .event-section .second-event p {
-  z-index: 4;
+.second-event .date {
+  display: inline-block;
+  text-align: center;
   background: rgb(32, 32, 32);
-  position: absolute;
+  padding: 20px 30px;
+}
+.second-event .date span {
+  color: rgb(248, 242, 242);
+  font-size: 1.5rem;
+}
+.second-event .date p {
   color: rgb(248, 242, 242);
 }
-.event .event-section .third-event {
+
+.third-event {
   display: flex;
+  flex-direction: column;
   grid-area: eve3;
   background: url(../img/event-03.jpg) center/cover;
   width: 100%;
+}
+.third-event .thirdcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin: 40px;
+  background: rgb(248, 242, 242);
+}
+.third-event .thirdcontainer .top {
+  display: inline-block;
+  text-align: center;
+  background: rgb(32, 32, 32);
+  padding: 20px 30px;
+  margin-bottom: 100px;
+}
+.third-event .thirdcontainer .top span {
+  color: rgb(248, 242, 242);
+  font-size: 1.5rem;
+}
+.third-event .thirdcontainer .top p {
+  color: rgb(248, 242, 242);
+}
+.third-event .thirdcontainer .info h4 {
+  text-align: center;
+  padding: 0 50px;
+  font-size: 2rem;
+  font-weight: 200;
+  font-family: Roboto, sans-serif;
+  margin-bottom: 20px;
+}
+.third-event .thirdcontainer .info ul {
+  display: flex;
+  justify-content: baseline;
+  color: rgba(182, 179, 179, 0.863);
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+.third-event .thirdcontainer .info ul i {
+  padding: 0 10px 0 20px;
+}
+.third-event .thirdcontainer .info .btn.info {
+  margin: 50px 150px;
+}
+
+.final {
+  background: rgb(32, 32, 32);
 }/*# sourceMappingURL=index.css.map */
